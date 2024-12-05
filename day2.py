@@ -23,8 +23,7 @@ def isRecordAdjacentNumbersDistanceBetweenOneAndThree(record):
 def getSafeRecordsAmount():
     total = 0
     for record in records:
-        if isRecordSafe(record):
-            total += 1
+        total += isRecordSafe(record)
     return total
 
 def isRecordSafeWithProblemDampener(record):
@@ -38,8 +37,7 @@ def isRecordSafeWithProblemDampener(record):
 def getSafeRecordsAmountWithProblemDampener():
     total = 0
     for record in records:
-        if isRecordSafeWithProblemDampener(record):
-            total += 1
+        total += isRecordSafeWithProblemDampener(record)
     return total
 
     
